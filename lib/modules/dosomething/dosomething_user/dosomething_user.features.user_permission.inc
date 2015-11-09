@@ -392,6 +392,16 @@ function dosomething_user_user_default_permissions() {
     'module' => 'node',
   );
 
+  // Exported permission: 'translate any entity'.
+  $permissions['translate any entity'] = array(
+    'name' => 'translate any entity',
+    'roles' => array(
+      'administrator' => 'administrator',
+      'global admin' => 'global admin',
+    ),
+    'module' => 'entity_translation',
+  );
+
   // Exported permission: 'translate interface'.
   $permissions['translate interface'] = array(
     'name' => 'translate interface',
